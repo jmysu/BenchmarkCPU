@@ -1,0 +1,2 @@
+# BenchmarkCPU
+CPU benchmark/bogomips
