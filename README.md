@@ -1,5 +1,5 @@
-## BenchmarkCPU
-CPU benchmark/bogomips
+## Benchmark available CPUs
+CPU sysbench/bogomips
 
 ### Apple iMac Intel Core i5 CPU 750  @ 2.67GHz
 ```
