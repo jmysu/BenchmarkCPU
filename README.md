@@ -14,6 +14,10 @@ Threads started!
 CPU speed:
     events per second:   928.48
 ```
+```
+BogoMips V1.3 Portable
+Calibrating delay loop.. ok - 3168.00 BogoMips
+```
 
 ### ASUS EB1033 Intel Atom CPU D2550 @ 1.86GHz
 ```
@@ -27,7 +31,6 @@ Initializing worker threads...
 Threads started!
 CPU speed:
     events per second:   109.39
-
 ```
 ```
 BogoMips V1.3 Portable
