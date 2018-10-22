@@ -29,7 +29,10 @@ CPU speed:
     events per second:   109.39
 
 ```
-
+```
+BogoMips V1.3 Portable
+Calibrating delay loop.. ok - 1842.00 BogoMips
+```
 ### Raspberry Pi Zero W
 ```
 
