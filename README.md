@@ -51,10 +51,10 @@ CPU speed:
     events per second:    68.89
 ```
 ```
-pi@rasbian:~ $ cat /proc/cpuinfo
-processor	: 0
-model name	: ARMv7 Processor rev 4 (v7l)
-BogoMIPS	: 38.40
+cc -DPORTABLE_BOGOMIPS -DCLOCKS_PER_SEC=1000000 -O0 -o bogomips.portable bogomips.c
+
+pi@rasbian:~/Downloads/BenchmarkCPU-master/Bogo-BogoMIPS_v1.3.Portable $ ./bogomips.portable 
+Calibrating delay loop.. ok - 396.00 BogoMips
 ```
 
 ### Raspberry Pi Zero W (5V 230mA)
