@@ -37,7 +37,7 @@ BogoMips V1.3 Portable
 Calibrating delay loop.. ok - 1842.00 BogoMips
 ```
 
-### Raspberry Pi3B+ Broadcom BCM2837 @ 1.4GHz (5V 700mA)
+### Raspberry Pi3B+ Broadcom BCM2837 @ 1.4GHz (5V/700mA)
 ```
 sysbench 1.1.0 (using bundled LuaJIT 2.1.0-beta3)
 
@@ -57,7 +57,7 @@ pi@rasbian:~/Downloads/BenchmarkCPU-master/Bogo-BogoMIPS_v1.3.Portable $ ./bogom
 Calibrating delay loop.. ok - 396.00 BogoMips
 ```
 
-### Raspberry Pi Zero W (5V 230mA)
+### Raspberry Pi0W Broadcom BCM2835 @ 1GHz (5V/230mA)
 ```
 
 ```
