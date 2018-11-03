@@ -5,7 +5,7 @@
 # uncomment one of the followng definitions for DEFS
 
 # use this for the portable bogomips program
-DEFS	= -DPORTABLE_BOGOMIPS
+#DEFS	= -DPORTABLE_BOGOMIPS
 
 # use this for the original Linux bogomips program
 #DEFS	= -DCLASSIC_BOGOMIPS
@@ -19,8 +19,8 @@ DEFS	= -DPORTABLE_BOGOMIPS
 #DEFS	= -DPORTABLE_BOGOMIPS -DCLOCKS_PER_SEC=1000000
 
 # use these flags if using gcc
-CC	= gcc
-CFLAGS	= -Wall -O3 -g -fomit-frame-pointer -finline-functions -static
+#CC	= gcc
+#CFLAGS	= -Wall -O3 -g -fomit-frame-pointer -finline-functions -static
 
 # use these flags if you are not using gcc; modify as needed
 #CC	= cc
@@ -31,11 +31,12 @@ CFLAGS	= -Wall -O3 -g -fomit-frame-pointer -finline-functions -static
 #	objdump -d --source bogomips.nat > bogomips.nat.asm
 #	arm-linux-gnueabi-gcc $(DEFS) $(CFLAGS) -o bogomips.arm bogomips.c
 #	arm-linux-gnueabi-objdump -d --source bogomips.arm > bogomips.arm.asm
-bogomips.x86: bogomips.c Makefile
-	$(CC) $(DEFS) $(CFLAGS) -o bogomips.portable bogomips.c
+bogomips.portable: bogomips.c Makefile
+#	$(CC) $(DEFS) $(CFLAGS) -o bogomips.portable bogomips.c
+	cc -DPORTABLE_BOGOMIPS -DCLOCKS_PER_SEC=1000000 -O0 -o bogomips.portable bogomips.c
 	
 clean:
-	$(RM) bogomips.x86 a.out
+	$(RM) bogomips.portable a.out
 
 #install: bogomips bogomips.1
 #	cp bogomips /usr/local/bin/bogomips
