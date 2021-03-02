@@ -59,8 +59,8 @@ Calibrating delay loop.. ok - 396.00 BogoMips
 
 ### Raspberry Pi CM3-B+ Lite Broadcom BCM2837B0 @ 1.2GHz (5V/500mA) <br>
 ```
-pi@raspberrypi:~/Downloads/BenchmarkCPU-master/Bogo-BogoMIPS_v1.3.Portable $ ./bogomips.portable <br>
-Calibrating delay loop.. ok - 338.00 BogoMips <br>
+pi@raspberrypi:~/Downloads/BenchmarkCPU-master/Bogo-BogoMIPS_v1.3.Portable $ ./bogomips.portable 
+Calibrating delay loop.. ok - 338.00 BogoMips
 ```
 
 
